@@ -1,0 +1,389 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "261",
+    "jobId" : "jobs/Automation_python_ReusableJobCluster_Schedule",
+    "name" : "Automation_python_ReusableJobCluster_Schedule",
+    "schedule" : "0 0 0 1/1 * ? 2090",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "adv-json2",
+    "alerting" : {
+      "emails" : "abhisheks+e2etests@prophecy.io",
+      "onStart" : true,
+      "onSuccess" : false,
+      "onFailure" : true
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "retries" : 0,
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    }
+  },
+  "processes" : {
+    "ub2WBVqwJcE7ZixF2ONcH$$RwEEQnH-2b1X8nkgP37q_" : {
+      "id" : "ub2WBVqwJcE7ZixF2ONcH$$RwEEQnH-2b1X8nkgP37q_",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "Automation_python_ReusableJobCluster_Pipeline_1",
+        "slug" : "Automation_python_ReusableJobCluster_Pipeline_1",
+        "x" : 640,
+        "y" : 340
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "KZmAqoDcEKOZRX59hXx9S$$WkihP-gDkL4fs9HKQoRU_",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "fNsy_v1t7Ft6uDfR7VViH$$wZpKCVOSu5EpLvGb36TMn",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "pipelineId" : "pipelines/Automation_python_ReusableJobCluster_Pipeline",
+        "configurations" : {
+          "schema" : [ {
+            "name" : "c_string",
+            "optional" : false,
+            "kind" : {
+              "type" : "string",
+              "value" : "string$%^&*#@"
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_int",
+            "optional" : false,
+            "kind" : {
+              "type" : "int",
+              "value" : 65530
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_boolean",
+            "optional" : false,
+            "kind" : {
+              "type" : "boolean",
+              "value" : true
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_short",
+            "optional" : false,
+            "kind" : {
+              "type" : "short",
+              "value" : 2
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_double",
+            "optional" : false,
+            "kind" : {
+              "type" : "double",
+              "value" : 22
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_float",
+            "optional" : false,
+            "kind" : {
+              "type" : "float",
+              "value" : -2.2
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_long",
+            "optional" : false,
+            "kind" : {
+              "type" : "long",
+              "value" : -2
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_spark_expression",
+            "optional" : false,
+            "kind" : {
+              "type" : "spark_expression",
+              "value" : "concat('a','b')"
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          } ],
+          "instances" : {
+            "Automation_python_ReusableJobCluster" : [ "default" ]
+          },
+          "overrides" : { },
+          "selectedInstance" : "default"
+        }
+      },
+      "parent" : "cWjO84HrCTVhkoQgvqLW4"
+    },
+    "IjF74Z35H43-2rIAsv_pD$$iv7scsOnnzzM-nSOn_6Rq" : {
+      "id" : "IjF74Z35H43-2rIAsv_pD$$iv7scsOnnzzM-nSOn_6Rq",
+      "component" : "DLTPipeline",
+      "metadata" : {
+        "label" : "DLTPipeline_1",
+        "slug" : "DLTPipeline_1",
+        "x" : 300,
+        "y" : 200
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "XY-39r58FGe9ZsqrzNbO5$$RyxRIFhj25ijdCUioL-Hq",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "88tVEOYxDdkUZO2BaEUx5$$s_LLY7RGI645toLWLkzOp",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "pipelineId" : "",
+        "configurations" : { },
+        "dltPipelineId" : "f1998ae5-0afe-4a4c-b13f-dce2dbe88ee2",
+        "fullRefresh" : true
+      },
+      "parent" : "cWjO84HrCTVhkoQgvqLW4"
+    },
+    "_MSBJc-7NZqKrlocFYN_x" : {
+      "id" : "_MSBJc-7NZqKrlocFYN_x",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "Automation_python_ReusableJobCluster_Pipeline",
+        "slug" : "Automation_python_ReusableJobCluster_Pipeline",
+        "x" : 100,
+        "y" : 100
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "in",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "out",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "pipelineId" : "pipelines/Automation_python_ReusableJobCluster_Pipeline",
+        "configurations" : {
+          "schema" : [ {
+            "name" : "c_string",
+            "optional" : false,
+            "kind" : {
+              "type" : "string",
+              "value" : "string$%^&*#@"
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_int",
+            "optional" : false,
+            "kind" : {
+              "type" : "int",
+              "value" : 65530
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_boolean",
+            "optional" : false,
+            "kind" : {
+              "type" : "boolean",
+              "value" : true
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_short",
+            "optional" : false,
+            "kind" : {
+              "type" : "short",
+              "value" : 2
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_double",
+            "optional" : false,
+            "kind" : {
+              "type" : "double",
+              "value" : 22
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_float",
+            "optional" : false,
+            "kind" : {
+              "type" : "float",
+              "value" : -2.2
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_long",
+            "optional" : false,
+            "kind" : {
+              "type" : "long",
+              "value" : -2
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_spark_expression",
+            "optional" : false,
+            "kind" : {
+              "type" : "spark_expression",
+              "value" : "concat('a','b')"
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          } ],
+          "instances" : {
+            "Automation_python_ReusableJobCluster" : [ "default" ]
+          },
+          "overrides" : { },
+          "selectedInstance" : "default"
+        }
+      },
+      "parent" : "3w3F_gbqIYIOcWnv8TUmu"
+    },
+    "PlGm4fpwp29BEZfoREMr6$$Idw-4-dIVDYsNIwZjkMKv" : {
+      "id" : "PlGm4fpwp29BEZfoREMr6$$Idw-4-dIVDYsNIwZjkMKv",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_1",
+        "slug" : "Script_1",
+        "x" : 60,
+        "y" : 100
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Xub3HK_U30Owqi0UZbyxa$$iYWS1y03BH_BqI8aasYyV",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "6wEmlKB7RHjD5KglvP1xS$$4pBmXcTgCIDFXVoysZS-o",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "code" : "print('This is the main python script')\n"
+      },
+      "parent" : "cWjO84HrCTVhkoQgvqLW4"
+    },
+    "3w3F_gbqIYIOcWnv8TUmu" : {
+      "id" : "3w3F_gbqIYIOcWnv8TUmu",
+      "component" : "Cluster",
+      "metadata" : {
+        "label" : "Cluster_1",
+        "slug" : "Cluster_1",
+        "x" : 40,
+        "y" : 0,
+        "width" : 280,
+        "height" : 280
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ ]
+      },
+      "properties" : {
+        "clusterSize" : "adv-json2"
+      }
+    },
+    "cWjO84HrCTVhkoQgvqLW4" : {
+      "id" : "cWjO84HrCTVhkoQgvqLW4",
+      "component" : "Cluster",
+      "metadata" : {
+        "label" : "Cluster_2",
+        "slug" : "Cluster_2",
+        "x" : -740,
+        "y" : -280,
+        "width" : 760,
+        "height" : 500
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ ]
+      },
+      "properties" : {
+        "clusterSize" : "adv-json2"
+      }
+    },
+    "pKbdwj43KARBlGLKMp125$$PDm1csD8tklC8eqKN50Tl" : {
+      "id" : "pKbdwj43KARBlGLKMp125$$PDm1csD8tklC8eqKN50Tl",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_2",
+        "slug" : "Script_2",
+        "x" : 180,
+        "y" : 100
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "02-Qeapn2_N5t4vMkt5vo$$XIRvfW-P7do6E7bjD-jVW",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "teN66E0MEJts2wbvUPxYI$$6LyrHN3buC1-bzE5VBMqh",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "code" : "print('This is the main python script')\n"
+      },
+      "parent" : "cWjO84HrCTVhkoQgvqLW4"
+    }
+  },
+  "connections" : [ {
+    "id" : "qIFARywq7xk-21z3epglv",
+    "source" : "_MSBJc-7NZqKrlocFYN_x",
+    "target" : "ub2WBVqwJcE7ZixF2ONcH$$RwEEQnH-2b1X8nkgP37q_",
+    "sourcePort" : "out",
+    "targetPort" : "KZmAqoDcEKOZRX59hXx9S$$WkihP-gDkL4fs9HKQoRU_"
+  } ]
+}

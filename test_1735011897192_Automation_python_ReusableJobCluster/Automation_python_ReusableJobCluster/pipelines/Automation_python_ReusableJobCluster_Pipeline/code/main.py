@@ -1,0 +1,3 @@
+from automation_python_reusablejobcluster_pipeline.pipeline import main
+
+main()

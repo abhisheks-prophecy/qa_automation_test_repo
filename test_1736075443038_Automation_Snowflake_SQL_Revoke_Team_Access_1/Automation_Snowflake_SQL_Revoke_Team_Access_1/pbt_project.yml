@@ -1,0 +1,110 @@
+name: Automation_Snowflake_SQL_Revoke_Team_Access_1
+description: test random description
+version: 0.0.1
+author: abhisheks+e2etests@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-01-05 11:11:26'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/test_random_1:
+    name: test_random_1
+    schema:
+      entityType: ''
+      providerType: Snowflake
+      fields:
+      - name: CUSTOMER_ID
+        dataType:
+          type: Number
+      - name: FIRST_NAME
+        dataType:
+          type: String
+      - name: LAST_NAME
+        dataType:
+          type: String
+      - name: NUMBER_OF_ORDERS
+        dataType:
+          type: Number
+      - name: CUSTOMER_LIFETIME_VALUE
+        dataType:
+          type: Number
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/testmodel1/test_random_1.sql
+    - .prophecy/ide/models/test_random_1.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-01-05 11:13:21'
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2025-01-05 11:11:28'
+sqlSeeds:
+  .prophecy/metadata/sqlseeds/customers:
+    name: customers
+    schema:
+      entityType: ''
+      providerType: Snowflake
+      fields:
+      - name: customer_id
+        dataType:
+          type: Number
+      - name: first_name
+        dataType:
+          type: String
+      - name: last_name
+        dataType:
+          type: String
+      - name: number_of_orders
+        dataType:
+          type: Number
+      - name: customer_lifetime_value
+        dataType:
+          type: Number
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - seeds/customers.csv
+    createdAt: '2025-01-05 11:13:32'
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: abhisheks+e2etests@prophecy.io
+  createdAt: '2025-01-05 11:11:26'
+dependencies: []
+projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}

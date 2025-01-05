@@ -1,0 +1,82 @@
+{
+  "id" : "test_random",
+  "metainfo" : {
+    "label" : "test_random",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "test_random##lDEAajhy" : {
+      "id" : "test_random##lDEAajhy",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "test_random",
+        "x" : 220,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM customers\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "KEEBgeln",
+          "slug" : "customers"
+        } ],
+        "outputs" : [ {
+          "id" : "BXoX7SA0",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "cl1loYJvVC8p4IalIDPIm" : {
+      "id" : "cl1loYJvVC8p4IalIDPIm",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "customers",
+        "slug" : "customers",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "customers",
+          "sourceType" : "Seed",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "0NKWaRNEXgBnrlpCG3SoZ",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "X_JlFM1K5M5b-DK6egfuR",
+    "source" : "cl1loYJvVC8p4IalIDPIm",
+    "sourcePort" : "0NKWaRNEXgBnrlpCG3SoZ",
+    "target" : "test_random##lDEAajhy",
+    "targetPort" : "KEEBgeln"
+  } ],
+  "component" : "Model"
+}

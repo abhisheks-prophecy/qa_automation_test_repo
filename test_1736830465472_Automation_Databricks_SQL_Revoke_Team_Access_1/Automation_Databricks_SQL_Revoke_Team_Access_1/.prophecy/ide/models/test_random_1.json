@@ -1,0 +1,81 @@
+{
+  "id" : "test_random_1",
+  "metainfo" : {
+    "label" : "test_random_1",
+    "autoLayout" : false,
+    "staleState" : "file",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "test_random_1##VutMJxfX" : {
+      "id" : "test_random_1##VutMJxfX",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "test_random_1",
+        "x" : 220,
+        "y" : 20,
+        "phase" : 0
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "uM0wRZlY",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "gK1GV72l",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "CRBi288JvuZCBiFqHXVGJ" : {
+      "id" : "CRBi288JvuZCBiFqHXVGJ",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "customers",
+        "slug" : "customers",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "customers",
+          "sourceType" : "Seed",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "Wg4E2wBVZlaAJwk6o8K_X",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "edEeT2NoCrGcabIIkVhfD",
+    "source" : "CRBi288JvuZCBiFqHXVGJ",
+    "sourcePort" : "Wg4E2wBVZlaAJwk6o8K_X",
+    "target" : "test_random_1##VutMJxfX",
+    "targetPort" : "uM0wRZlY"
+  } ],
+  "component" : "Model"
+}

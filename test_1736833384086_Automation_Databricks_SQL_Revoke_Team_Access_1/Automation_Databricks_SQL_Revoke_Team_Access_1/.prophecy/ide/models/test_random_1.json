@@ -1,0 +1,82 @@
+{
+  "id" : "test_random_1",
+  "metainfo" : {
+    "label" : "test_random_1",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "test_random_1##ITCnCyKf" : {
+      "id" : "test_random_1##ITCnCyKf",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "test_random_1",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM customers\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "WezLe8Nu",
+          "slug" : "customers"
+        } ],
+        "outputs" : [ {
+          "id" : "lS5taOWN",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "prQVm7Rt6buP6vWGSp6Tg" : {
+      "id" : "prQVm7Rt6buP6vWGSp6Tg",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "customers",
+        "slug" : "customers",
+        "x" : -520,
+        "y" : -160,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "customers",
+          "sourceType" : "Seed",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "Ikvia2cxtoTFpqUg8qgU_",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "HVPXgnF80VygtFImP_iAv",
+    "source" : "prQVm7Rt6buP6vWGSp6Tg",
+    "sourcePort" : "Ikvia2cxtoTFpqUg8qgU_",
+    "target" : "test_random_1##ITCnCyKf",
+    "targetPort" : "WezLe8Nu"
+  } ],
+  "component" : "Model"
+}

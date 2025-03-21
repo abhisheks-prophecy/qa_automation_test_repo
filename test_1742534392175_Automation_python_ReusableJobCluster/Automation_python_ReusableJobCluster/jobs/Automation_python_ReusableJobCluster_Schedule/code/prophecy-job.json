@@ -1,0 +1,427 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "894",
+    "jobId" : "jobs/Automation_python_ReusableJobCluster_Schedule",
+    "name" : "Automation_python_ReusableJobCluster_Schedule",
+    "schedule" : "0 0 0 1/1 * ? 2090",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "adv-json2",
+    "alerting" : {
+      "emails" : "abhisheks+e2etests@prophecy.io",
+      "onStart" : true,
+      "onSuccess" : false,
+      "onFailure" : true
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    }
+  },
+  "processes" : {
+    "JZhP1yS9ZxNPcVp1Ib-aA" : {
+      "id" : "JZhP1yS9ZxNPcVp1Ib-aA",
+      "component" : "Cluster",
+      "metadata" : {
+        "label" : "Cluster_2",
+        "slug" : "Cluster_2",
+        "x" : -760,
+        "y" : -300,
+        "width" : 780,
+        "height" : 500
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ ]
+      },
+      "properties" : {
+        "clusterSize" : "adv-json2"
+      }
+    },
+    "kNZ6gcOkidutmpNbq8FkR$$ZtIgAeJyKRY3_mDolG9qg" : {
+      "id" : "kNZ6gcOkidutmpNbq8FkR$$ZtIgAeJyKRY3_mDolG9qg",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_2",
+        "slug" : "Script_2",
+        "x" : 180,
+        "y" : 100
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "r3ThHF4iBO9l4Up-UHDoo$$EEf38e3pF-E-lCpEo8Kv_",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "eYSx4wJ2nkqwZwsEhroYz$$U7bz3R8ke7wNnZbDvSIbj",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        },
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "code" : "print('This is the main python script')\n"
+      },
+      "parent" : "JZhP1yS9ZxNPcVp1Ib-aA"
+    },
+    "R023h7SU6aotdJDHYsGOF" : {
+      "id" : "R023h7SU6aotdJDHYsGOF",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "Automation_python_ReusableJobCluster_Pipeline",
+        "slug" : "Automation_python_ReusableJobCluster_Pipeline",
+        "x" : 100,
+        "y" : 100
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "in",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "out",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        },
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "pipelineId" : "pipelines/Automation_python_ReusableJobCluster_Pipeline",
+        "configurations" : {
+          "schema" : [ {
+            "name" : "c_string",
+            "optional" : false,
+            "kind" : {
+              "type" : "string",
+              "value" : "string$%^&*#@"
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_int",
+            "optional" : false,
+            "kind" : {
+              "type" : "int",
+              "value" : 65530
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_boolean",
+            "optional" : false,
+            "kind" : {
+              "type" : "boolean",
+              "value" : true
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_short",
+            "optional" : false,
+            "kind" : {
+              "type" : "short",
+              "value" : 2
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_double",
+            "optional" : false,
+            "kind" : {
+              "type" : "double",
+              "value" : 22
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_float",
+            "optional" : false,
+            "kind" : {
+              "type" : "float",
+              "value" : -2.2
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_long",
+            "optional" : false,
+            "kind" : {
+              "type" : "long",
+              "value" : -2
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_spark_expression",
+            "optional" : false,
+            "kind" : {
+              "type" : "spark_expression",
+              "value" : "concat('a','b')"
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          } ],
+          "instances" : {
+            "Automation_python_ReusableJobCluster" : [ "default" ]
+          },
+          "overrides" : { },
+          "selectedInstance" : "default"
+        },
+        "projectId" : "2583"
+      },
+      "parent" : "Bv5r1kYJ9akFARouGscKU"
+    },
+    "7uoYkjgEdsguXkjq5Ic_M$$KUYBEDcz1Y-nR7Z2qYQs6" : {
+      "id" : "7uoYkjgEdsguXkjq5Ic_M$$KUYBEDcz1Y-nR7Z2qYQs6",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_1",
+        "slug" : "Script_1",
+        "x" : 60,
+        "y" : 100
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "g86lVoI6Ypn-9-VC1aBY7$$SBXES7r9K8CXgAl3_iwbw",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "G8FvhueotgPLuErSvYlHX$$LsmK8sFSvA4epECoRZYc3",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        },
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "code" : "print('This is the main python script')\n"
+      },
+      "parent" : "JZhP1yS9ZxNPcVp1Ib-aA"
+    },
+    "Bv5r1kYJ9akFARouGscKU" : {
+      "id" : "Bv5r1kYJ9akFARouGscKU",
+      "component" : "Cluster",
+      "metadata" : {
+        "label" : "Cluster_1",
+        "slug" : "Cluster_1",
+        "x" : 40,
+        "y" : 0,
+        "width" : 280,
+        "height" : 280
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ ]
+      },
+      "properties" : {
+        "clusterSize" : "adv-json2"
+      }
+    },
+    "JjlbBUBmvx0wo4vbNhTje$$X5zyCCg-9Mn0XhPSyi3Hd" : {
+      "id" : "JjlbBUBmvx0wo4vbNhTje$$X5zyCCg-9Mn0XhPSyi3Hd",
+      "component" : "DLTPipeline",
+      "metadata" : {
+        "label" : "DLTPipeline_1",
+        "slug" : "DLTPipeline_1",
+        "x" : 280,
+        "y" : 180
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "5GAZX9NIo0W3D1Zu8rTmS$$K9KBV8gsV2oHvnSRRChFF",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "4buuZAjhkqBHnXm90lAQ5$$u6QOmWO9FxNOKZukWLTLq",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        },
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "pipelineId" : "",
+        "configurations" : { },
+        "dltPipelineId" : "f1998ae5-0afe-4a4c-b13f-dce2dbe88ee2",
+        "fullRefresh" : true
+      },
+      "parent" : "JZhP1yS9ZxNPcVp1Ib-aA"
+    },
+    "zwwShOtH5wJuQPKWqmZKq$$EaDvK_LNmW4lAfkVB5lZa" : {
+      "id" : "zwwShOtH5wJuQPKWqmZKq$$EaDvK_LNmW4lAfkVB5lZa",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "Automation_python_ReusableJobCluster_Pipeline_1",
+        "slug" : "Automation_python_ReusableJobCluster_Pipeline_1",
+        "x" : 660,
+        "y" : 340
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "WqzHJhwKzcVDvE7lVNVdX$$UASLfoh2jJHlmRga0VpNh",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "3HsYi-jX3OqWwpjrJ-ADe$$YXcWTdQTVyfR5AA44_guQ",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        },
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "pipelineId" : "pipelines/Automation_python_ReusableJobCluster_Pipeline",
+        "configurations" : {
+          "schema" : [ {
+            "name" : "c_string",
+            "optional" : false,
+            "kind" : {
+              "type" : "string",
+              "value" : "string$%^&*#@"
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_int",
+            "optional" : false,
+            "kind" : {
+              "type" : "int",
+              "value" : 65530
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_boolean",
+            "optional" : false,
+            "kind" : {
+              "type" : "boolean",
+              "value" : true
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_short",
+            "optional" : false,
+            "kind" : {
+              "type" : "short",
+              "value" : 2
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_double",
+            "optional" : false,
+            "kind" : {
+              "type" : "double",
+              "value" : 22
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_float",
+            "optional" : false,
+            "kind" : {
+              "type" : "float",
+              "value" : -2.2
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_long",
+            "optional" : false,
+            "kind" : {
+              "type" : "long",
+              "value" : -2
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_spark_expression",
+            "optional" : false,
+            "kind" : {
+              "type" : "spark_expression",
+              "value" : "concat('a','b')"
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          } ],
+          "instances" : {
+            "Automation_python_ReusableJobCluster" : [ "default" ]
+          },
+          "overrides" : { },
+          "selectedInstance" : "default"
+        },
+        "projectId" : "2583"
+      },
+      "parent" : "JZhP1yS9ZxNPcVp1Ib-aA"
+    }
+  },
+  "connections" : [ {
+    "id" : "cHKIOs7_c-hRiFtNqvcRk",
+    "source" : "R023h7SU6aotdJDHYsGOF",
+    "target" : "zwwShOtH5wJuQPKWqmZKq$$EaDvK_LNmW4lAfkVB5lZa",
+    "sourcePort" : "out",
+    "targetPort" : "WqzHJhwKzcVDvE7lVNVdX$$UASLfoh2jJHlmRga0VpNh"
+  } ]
+}

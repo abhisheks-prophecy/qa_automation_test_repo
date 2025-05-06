@@ -1,6 +1,6 @@
 name: Automation_Snowflake_SQL_Revoke_Team_Access_1
 description: test random description
-version: 0.0.1
+version: '1.1746203468811'
 author: abhisheks+e2etests@prophecy.io
 language: sql
 buildSystem: ''

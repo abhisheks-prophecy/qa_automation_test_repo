@@ -1,0 +1,83 @@
+{
+  "id" : "test_random_1",
+  "metainfo" : {
+    "label" : "test_random_1",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "test_random_1##MLpKFgUb" : {
+      "id" : "test_random_1##MLpKFgUb",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "test_random_1",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM customers\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "pRPm1fFL",
+          "slug" : "customers"
+        } ],
+        "outputs" : [ {
+          "id" : "lTudWxzY",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "YMMrPDOU9ZMjtkorL_26z" : {
+      "id" : "YMMrPDOU9ZMjtkorL_26z",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "customers",
+        "slug" : "customers",
+        "x" : -520,
+        "y" : -160,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "customers",
+          "sourceType" : "Seed",
+          "sourceName" : "",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "PfzBlzAvDMlmu32qyliSr",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "d2ivFQ2Hxzb0pE9yl8KHy",
+    "source" : "YMMrPDOU9ZMjtkorL_26z",
+    "sourcePort" : "PfzBlzAvDMlmu32qyliSr",
+    "target" : "test_random_1##MLpKFgUb",
+    "targetPort" : "pRPm1fFL"
+  } ],
+  "component" : "Model"
+}

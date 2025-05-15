@@ -1,0 +1,91 @@
+{
+  "id" : "test_Automationchetan_Databricks_jobs_model",
+  "metainfo" : {
+    "label" : "test_Automationchetan_Databricks_jobs_model",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "full_refresh" : true,
+        "materialized" : "table",
+        "type" : "ModelConfig"
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "test_Automationchetan_Databricks_jobs_model##PJtuUqhw" : {
+      "id" : "test_Automationchetan_Databricks_jobs_model##PJtuUqhw",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "test_Automationchetan_Databricks_jobs_model",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM qa_test_Automationchetan_seed_job_Databricks\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "BeeCrMZ8",
+          "slug" : "qa_test_Automationchetan_seed_job_Databricks"
+        } ],
+        "outputs" : [ {
+          "id" : "dgDRRSe3",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "1ZpUyjBDKEdLbHQ1CFP3P" : {
+      "id" : "1ZpUyjBDKEdLbHQ1CFP3P",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "qa_test_Automationchetan_seed_job_Databricks",
+        "slug" : "qa_test_Automationchetan_seed_job_Databricks",
+        "x" : -520,
+        "y" : -160,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "qa_test_Automationchetan_seed_job_Databricks",
+          "sourceType" : "Seed",
+          "sourceName" : "",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "IxQ-WQBRIuU7ftld8s6Y1",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "OGKgXIEgsjpT_f9iHdM_o",
+    "source" : "1ZpUyjBDKEdLbHQ1CFP3P",
+    "sourcePort" : "IxQ-WQBRIuU7ftld8s6Y1",
+    "target" : "test_Automationchetan_Databricks_jobs_model##PJtuUqhw",
+    "targetPort" : "BeeCrMZ8"
+  } ],
+  "component" : "Model"
+}

@@ -1,0 +1,5 @@
+---
+version: 2
+seeds:
+- name: "qa_test_Automationchetan_seed_job_Snowflake"
+  columns: []

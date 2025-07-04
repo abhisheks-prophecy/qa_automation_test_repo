@@ -1,0 +1,132 @@
+name: Automation_SQL_CodeView
+description: test random description
+version: 0.0.1
+author: abhisheks+e2etests@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs:
+  jobs/Snowflake-SQL_Automation_CodeView:
+    name: Snowflake-SQL_Automation_CodeView
+    description: SQL Snowflake test job MWAA
+    fabricUID: 9
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0 0 0 * * ? 2090
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2025-07-04 01:34:26'
+    author: abhisheks+e2etests@prophecy.io
+    models: []
+    sqlProjects: []
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-07-04 01:30:30'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/test_Automation_Snowflake_jobs_model:
+    name: test_Automation_Snowflake_jobs_model
+    schema:
+      entityType: ''
+      providerType: Snowflake
+      fields:
+      - name: ID
+        dataType:
+          type: Number
+      - name: NAME
+        dataType:
+          type: String
+      - name: UPDATED_AT
+        dataType:
+          type: Date
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/testmodel/test_Automation_Snowflake_jobs_model.sql
+    - .prophecy/ide/models/test_Automation_Snowflake_jobs_model.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-07-04 01:31:59'
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2025-07-04 01:30:39'
+sqlSeeds:
+  .prophecy/metadata/sqlseeds/qa_test_Automation_seed_job_Snowflake:
+    name: qa_test_Automation_seed_job_Snowflake
+    schema:
+      entityType: ''
+      providerType: Snowflake
+      fields:
+      - name: id
+        dataType:
+          type: Number
+      - name: name
+        dataType:
+          type: String
+      - name: updated_at
+        dataType:
+          type: Date
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - seeds/qa_test_Automation_seed_job_Snowflake.csv
+    - seeds/seeds.yml
+    createdAt: '2025-07-04 01:33:02'
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: abhisheks+e2etests@prophecy.io
+  createdAt: '2025-07-04 01:30:30'
+dependencies: []
+projectDependencies:
+  '13582':
+    projectUID: 13582
+    projectName: ProphecySnowflakeSqlBasics
+    repositoryPath: gitUri=https://github.com/prophecy-io/snowflake-sql-basics&subPath=
+    version: 0.0.6.dev0
+    isDefault: true
+    author: null
+    createdAt: '2025-07-04 01:30:03'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: false
+pipelineConfigurations: {}

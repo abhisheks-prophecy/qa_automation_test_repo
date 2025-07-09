@@ -1,0 +1,84 @@
+{
+  "id" : "test_random_1",
+  "metainfo" : {
+    "label" : "test_random_1",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "test_random_1##Suw24RjL" : {
+      "id" : "test_random_1##Suw24RjL",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "test_random_1",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM customers\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "R0dzLaUn",
+          "slug" : "customers"
+        } ],
+        "outputs" : [ {
+          "id" : "NdIXFLqM",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "8n98zbxJHc3aH37mQTGRv" : {
+      "id" : "8n98zbxJHc3aH37mQTGRv",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "customers",
+        "slug" : "customers",
+        "x" : -500,
+        "y" : -180,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "customers",
+          "sourceType" : "Seed",
+          "sourceName" : "",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "cv9yWrchHhQUkcwOkql7u",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "0bU6U90ssmOn3RFVmuAek",
+    "source" : "8n98zbxJHc3aH37mQTGRv",
+    "sourcePort" : "cv9yWrchHhQUkcwOkql7u",
+    "target" : "test_random_1##Suw24RjL",
+    "targetPort" : "R0dzLaUn"
+  } ],
+  "component" : "Model"
+}

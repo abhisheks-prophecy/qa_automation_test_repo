@@ -1,0 +1,476 @@
+{
+  "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1",
+      "unitTestNullDataMigrated" : true
+    },
+    "functions" : { },
+    "codeGenConfiguration" : {
+      "editableConfig" : true,
+      "plibVersion" : {
+        "mavenVersion" : "8.10.1",
+        "pyPiVersion" : "1.9.49"
+      },
+      "sparkConfigJinjaEnabled" : true
+    },
+    "id" : "1",
+    "uri" : "pipelines/Automation_python_ReusableJobCluster_Pipeline",
+    "pipelineSettingsInfo" : {
+      "applicationName" : "Automation_python_ReusableJobCluster_Pipeline",
+      "hasApplication" : true,
+      "isFunctionsPackageDirDefined" : true,
+      "isNullValuesInUnitTestsEnabled" : true,
+      "sparkConfigOptions" : {
+        "disableSparkCreationTimeConfigGeneration" : true
+      }
+    },
+    "language" : "python",
+    "fabricId" : "65",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "abhishekse2etestsprophecyioteam.automationpythonreusablejobcluster.functions",
+      "sharedFunctionPackageNames" : [ "prophecy.warehouse.functions", "prophecy.streaming.functions", "prophecy.webapp.functions", "prophecy.spark_basic.functions", "prophecy.spark_abi.functions", "abhishekse2etestsprophecyioteam.pythonproject.functions" ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ {
+          "name" : "c_string",
+          "kind" : {
+            "type" : "string",
+            "value" : "string$$%^&*#@"
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
+        }, {
+          "name" : "c_int",
+          "kind" : {
+            "type" : "int",
+            "value" : 65530
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
+        }, {
+          "name" : "c_boolean",
+          "kind" : {
+            "type" : "boolean",
+            "value" : true
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
+        }, {
+          "name" : "c_short",
+          "kind" : {
+            "type" : "short",
+            "value" : 2
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
+        }, {
+          "name" : "c_double",
+          "kind" : {
+            "type" : "double",
+            "value" : 22
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
+        }, {
+          "name" : "c_float",
+          "kind" : {
+            "type" : "float",
+            "value" : -2.2
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
+        }, {
+          "name" : "c_long",
+          "kind" : {
+            "type" : "long",
+            "value" : -2
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
+        }, {
+          "name" : "c_spark_expression",
+          "kind" : {
+            "type" : "spark_expression",
+            "value" : null
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
+        } ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ {
+      "name" : "spark.default.parallelism",
+      "value" : "4"
+    }, {
+      "name" : "spark.sql.legacy.allowUntypedScalaUDF",
+      "value" : "true"
+    } ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "5",
+      "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "6",
+      "projectName" : "ProphecyStreamingPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "7",
+      "projectName" : "ProphecyWebAppPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "4",
+      "projectName" : "ProphecySparkBasicsPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "9",
+      "projectName" : "ProphecySparkAbinitioPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "169",
+      "projectName" : "python_project",
+      "externalDependencies" : [ {
+        "type" : "plibMaven",
+        "modifiedAt" : "2024-08-21T05:28:21.2609Z",
+        "name" : "plibMaven",
+        "version" : "8.0.31",
+        "id" : "578600683",
+        "createdAt" : "2024-08-21T05:28:21.2609Z"
+      }, {
+        "type" : "plibPypi",
+        "modifiedAt" : "2024-08-21T05:28:21.2609Z",
+        "name" : "plibPypi",
+        "version" : "1.9.9",
+        "id" : "1939197799",
+        "createdAt" : "2024-08-21T05:28:21.2609Z"
+      } ]
+    } ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "automation_python_reusablejobcluster_pipeline",
+    "configTopLevelPackage" : "automation_python_reusablejobcluster_pipeline",
+    "configurationVersion" : "v2"
+  },
+  "connections" : [ {
+    "id" : "28TAtgJ8RNT3BA93vU9Ff",
+    "source" : "DrFA3sP0DDELSQohiQHnX$$-73J1CWGsUmDAMqubGvTe",
+    "sourcePort" : "92ivxlpX2fmtZHtWYaX_I$$P22Dl6Q2C-cIM5N7sSrjB",
+    "target" : "gbmOlAI-YblnpyL14Dsnw$$8mYWI8KqpIfh8i2txlpD3",
+    "targetPort" : "03MO7iKsba98CTNpkiUQv$$xy_0o1i1EqekDzEBqKcW7"
+  } ],
+  "processes" : {
+    "DrFA3sP0DDELSQohiQHnX$$-73J1CWGsUmDAMqubGvTe" : {
+      "id" : "DrFA3sP0DDELSQohiQHnX$$-73J1CWGsUmDAMqubGvTe",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "dataset_cust_in",
+        "slug" : "dataset_cust_in",
+        "x" : -560,
+        "y" : -220,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "92ivxlpX2fmtZHtWYaX_I$$P22Dl6Q2C-cIM5N7sSrjB",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "gitUri=http://gitserver:3000/dAWtdk8h_team_147/Ln6aHaI0_project_169.git&subPath=&tag=python_project/v1&projectSubscriptionProjectId=169&path=datasets/dataset_cust_in"
+      }
+    },
+    "gbmOlAI-YblnpyL14Dsnw$$8mYWI8KqpIfh8i2txlpD3" : {
+      "id" : "gbmOlAI-YblnpyL14Dsnw$$8mYWI8KqpIfh8i2txlpD3",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "reformat_customer_info",
+        "slug" : "reformat_customer_info",
+        "x" : -420,
+        "y" : -220,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "dataPreview" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "03MO7iKsba98CTNpkiUQv$$xy_0o1i1EqekDzEBqKcW7",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "first_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "last_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "phone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "email",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "country_code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "account_open_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "account_flags",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "1TicwH_lSFiDWqJVyMXMz$$CyN5mKwCDikbYJklSBDTC",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "col1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "concat('$c_string', '$c_int', '$c_boolean', '$c_short', '$c_double', '$c_float', '$c_long')"
+          },
+          "description" : ""
+        }, {
+          "target" : "col2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "expr('$c_spark_expression')"
+          },
+          "description" : ""
+        }, {
+          "target" : "customer_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "customer_id"
+          },
+          "description" : ""
+        }, {
+          "target" : "first_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first_name"
+          },
+          "description" : ""
+        }, {
+          "target" : "last_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "last_name"
+          },
+          "description" : ""
+        }, {
+          "target" : "phone",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "phone"
+          },
+          "description" : ""
+        }, {
+          "target" : "email",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "email"
+          },
+          "description" : ""
+        }, {
+          "target" : "country_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "country_code"
+          },
+          "description" : ""
+        }, {
+          "target" : "account_open_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "account_open_date"
+          },
+          "description" : ""
+        }, {
+          "target" : "account_flags",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "account_flags"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "03MO7iKsba98CTNpkiUQv$$xy_0o1i1EqekDzEBqKcW7##email", "03MO7iKsba98CTNpkiUQv$$xy_0o1i1EqekDzEBqKcW7##account_flags", "03MO7iKsba98CTNpkiUQv$$xy_0o1i1EqekDzEBqKcW7##account_open_date", "03MO7iKsba98CTNpkiUQv$$xy_0o1i1EqekDzEBqKcW7##last_name", "03MO7iKsba98CTNpkiUQv$$xy_0o1i1EqekDzEBqKcW7##customer_id", "03MO7iKsba98CTNpkiUQv$$xy_0o1i1EqekDzEBqKcW7##country_code", "03MO7iKsba98CTNpkiUQv$$xy_0o1i1EqekDzEBqKcW7##phone", "03MO7iKsba98CTNpkiUQv$$xy_0o1i1EqekDzEBqKcW7##first_name" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/XIUGo8J6_team_2/XIUGo8J6_project_4.git&subPath=&tag=0.2.46&projectSubscriptionProjectId=4&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.metainfo.configuration.common.fields[7].kind.value",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Default values error for key: `c_spark_expression` has empty spark expression value",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.gbmOlAI-YblnpyL14Dsnw$$8mYWI8KqpIfh8i2txlpD3.properties.expressions[0].expression.expression",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "concat('$c_string', '$c_int', '$c_boolean', '$c_short', '$c_double', '$c_float', '$c_long') is not a valid spark-sql expression. Error: configuration key: 'c_string' does not exist;configuration key: 'c_int' does not exist;configuration key: 'c_boolean' does not exist;configuration key: 'c_short' does not exist;configuration key: 'c_double' does not exist;configuration key: 'c_float' does not exist;configuration key: 'c_long' does not exist",
+    "tags" : [ ],
+    "relatedInformation" : [ ],
+    "diagnosticFix" : {
+      "fixType" : "CopilotDiagnosticFix",
+      "copilotFixType" : "expression"
+    }
+  }, {
+    "property" : "$.workflow.processes.gbmOlAI-YblnpyL14Dsnw$$8mYWI8KqpIfh8i2txlpD3.properties.expressions[1].expression.expression",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "expr('$c_spark_expression') is not a valid spark-sql expression. Error: configuration key: 'c_spark_expression' does not exist",
+    "tags" : [ ],
+    "relatedInformation" : [ ],
+    "diagnosticFix" : {
+      "fixType" : "CopilotDiagnosticFix",
+      "copilotFixType" : "expression"
+    }
+  } ]
+}

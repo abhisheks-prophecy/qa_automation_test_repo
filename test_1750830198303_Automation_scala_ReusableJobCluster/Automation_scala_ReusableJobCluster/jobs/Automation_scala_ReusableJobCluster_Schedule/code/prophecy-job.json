@@ -1,0 +1,425 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "1416",
+    "jobId" : "jobs/Automation_scala_ReusableJobCluster_Schedule",
+    "name" : "Automation_scala_ReusableJobCluster_Schedule",
+    "schedule" : "0 0 0 1/1 * ? 2090",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "adv-json2",
+    "alerting" : {
+      "emails" : "abhisheks+e2etests@prophecy.io",
+      "onStart" : true,
+      "onSuccess" : false,
+      "onFailure" : true
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    }
+  },
+  "processes" : {
+    "wTpfohHReFCwwFY1e8ZR3$$Vl5Xs4PNieiXDuDjO3X5A" : {
+      "id" : "wTpfohHReFCwwFY1e8ZR3$$Vl5Xs4PNieiXDuDjO3X5A",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_2",
+        "slug" : "Script_2",
+        "x" : -380,
+        "y" : -180
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "78OtNYf7Wocsy2BGYeoZI$$UCtLqfxfFaKxDcJpxtJDK",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "LQsiexOmqAziSx0DAQasb$$z8tayuVZG7bBKpjBzs6sd",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        },
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "code" : "print('This is the main python script')\n"
+      }
+    },
+    "17kfdOoezNu_v_N16xSXA" : {
+      "id" : "17kfdOoezNu_v_N16xSXA",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "Automation_scala_ReusableJobCluster_Pipeline",
+        "slug" : "Automation_scala_ReusableJobCluster_Pipeline",
+        "x" : 100,
+        "y" : 100
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "in",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "out",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        },
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "pipelineId" : "pipelines/Automation_scala_ReusableJobCluster_Pipeline",
+        "configurations" : {
+          "schema" : [ {
+            "name" : "c_string",
+            "optional" : false,
+            "kind" : {
+              "type" : "string",
+              "value" : "string$%^&*#@"
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_int",
+            "optional" : false,
+            "kind" : {
+              "type" : "int",
+              "value" : 65530
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_boolean",
+            "optional" : false,
+            "kind" : {
+              "type" : "boolean",
+              "value" : true
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_short",
+            "optional" : false,
+            "kind" : {
+              "type" : "short",
+              "value" : 2
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_double",
+            "optional" : false,
+            "kind" : {
+              "type" : "double",
+              "value" : 22
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_float",
+            "optional" : false,
+            "kind" : {
+              "type" : "float",
+              "value" : -2.2
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_long",
+            "optional" : false,
+            "kind" : {
+              "type" : "long",
+              "value" : -2
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_spark_expression",
+            "optional" : false,
+            "kind" : {
+              "type" : "spark_expression",
+              "value" : null
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          } ],
+          "instances" : {
+            "Automation_scala_ReusableJobCluster" : [ "default" ]
+          },
+          "overrides" : { },
+          "selectedInstance" : "default"
+        },
+        "projectId" : "4013"
+      },
+      "parent" : "ix_79ZkLkRvbG04srRK8f"
+    },
+    "ix_79ZkLkRvbG04srRK8f" : {
+      "id" : "ix_79ZkLkRvbG04srRK8f",
+      "component" : "Cluster",
+      "metadata" : {
+        "label" : "Cluster_1",
+        "slug" : "Cluster_1",
+        "x" : 40,
+        "y" : 0,
+        "width" : 280,
+        "height" : 280
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ ]
+      },
+      "properties" : {
+        "clusterSize" : "adv-json2"
+      }
+    },
+    "9fa5ZV_z9YVCupcBD5Zt4$$TtbI23g_TuW5XGR31wj9K" : {
+      "id" : "9fa5ZV_z9YVCupcBD5Zt4$$TtbI23g_TuW5XGR31wj9K",
+      "component" : "DLTPipeline",
+      "metadata" : {
+        "label" : "DLTPipeline_1",
+        "slug" : "DLTPipeline_1",
+        "x" : -420,
+        "y" : -80
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "hsE2oBCOqiuk_L_roi589$$ZKynX8gHbj1Ts3Xuacy1-",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "oimzaCg_t_WSWIxnxHIQK$$VlshtJN58iF--bSS-CsUQ",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        },
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "pipelineId" : "",
+        "configurations" : { },
+        "dltPipelineId" : "f1998ae5-0afe-4a4c-b13f-dce2dbe88ee2",
+        "fullRefresh" : true
+      }
+    },
+    "QxRSAh0Amc73_45L5WKx8" : {
+      "id" : "QxRSAh0Amc73_45L5WKx8",
+      "component" : "Cluster",
+      "metadata" : {
+        "label" : "Cluster_2",
+        "slug" : "Cluster_2",
+        "x" : -700,
+        "y" : -280,
+        "width" : 320,
+        "height" : 280
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ ]
+      },
+      "properties" : {
+        "clusterSize" : "adv-json2"
+      }
+    },
+    "FiX_lDk45v7dvprWI7vqm$$6hGkboKBAyhVBryNBqkRk" : {
+      "id" : "FiX_lDk45v7dvprWI7vqm$$6hGkboKBAyhVBryNBqkRk",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "Automation_scala_ReusableJobCluster_Pipeline_1",
+        "slug" : "Automation_scala_ReusableJobCluster_Pipeline_1",
+        "x" : 60,
+        "y" : 100
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Fgb9ojIA627o4ciKxLApY$$s1z-W3Pw1hih61mkU7viZ",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "zMFSfNMivz_7iVcUr6LVb$$ksdN0AA2XB-K10hdqdrIu",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        },
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "pipelineId" : "pipelines/Automation_scala_ReusableJobCluster_Pipeline",
+        "configurations" : {
+          "schema" : [ {
+            "name" : "c_string",
+            "optional" : false,
+            "kind" : {
+              "type" : "string",
+              "value" : "string$%^&*#@"
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_int",
+            "optional" : false,
+            "kind" : {
+              "type" : "int",
+              "value" : 65530
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_boolean",
+            "optional" : false,
+            "kind" : {
+              "type" : "boolean",
+              "value" : true
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_short",
+            "optional" : false,
+            "kind" : {
+              "type" : "short",
+              "value" : 2
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_double",
+            "optional" : false,
+            "kind" : {
+              "type" : "double",
+              "value" : 22
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_float",
+            "optional" : false,
+            "kind" : {
+              "type" : "float",
+              "value" : -2.2
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_long",
+            "optional" : false,
+            "kind" : {
+              "type" : "long",
+              "value" : -2
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          }, {
+            "name" : "c_spark_expression",
+            "optional" : false,
+            "kind" : {
+              "type" : "spark_expression",
+              "value" : null
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : false
+          } ],
+          "instances" : {
+            "Automation_scala_ReusableJobCluster" : [ "default" ]
+          },
+          "overrides" : { },
+          "selectedInstance" : "default"
+        },
+        "projectId" : "4013"
+      },
+      "parent" : "QxRSAh0Amc73_45L5WKx8"
+    },
+    "dIb6gv3aHDiRBAh3W4GCM$$mY0Zj2Yq0gHJ01sg_Zt0T" : {
+      "id" : "dIb6gv3aHDiRBAh3W4GCM$$mY0Zj2Yq0gHJ01sg_Zt0T",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_1",
+        "slug" : "Script_1",
+        "x" : 200,
+        "y" : 100
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "jJ53DrvOmq-tEVasyv_85$$6J55iXJJaztbUt8waGceT",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "3VCE-YfOp4H3qBc-VGk3_$$tdZyJZ8nLHsyQhZ4H_8DR",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        },
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "code" : "print('This is the main python script')\n"
+      },
+      "parent" : "QxRSAh0Amc73_45L5WKx8"
+    }
+  },
+  "connections" : [ {
+    "id" : "SLv_sPKAhrEsvexEPPouJ",
+    "source" : "17kfdOoezNu_v_N16xSXA",
+    "target" : "FiX_lDk45v7dvprWI7vqm$$6hGkboKBAyhVBryNBqkRk",
+    "sourcePort" : "out",
+    "targetPort" : "Fgb9ojIA627o4ciKxLApY$$s1z-W3Pw1hih61mkU7viZ"
+  } ]
+}

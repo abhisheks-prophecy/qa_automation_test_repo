@@ -26,7 +26,25 @@ subgraphs: {}
 sqlModels:
   .prophecy/metadata/sqlmodels/test_random_1:
     name: test_random_1
-    schema: null
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: customer_id
+        dataType:
+          type: Integer
+      - name: first_name
+        dataType:
+          type: String
+      - name: last_name
+        dataType:
+          type: String
+      - name: number_of_orders
+        dataType:
+          type: Integer
+      - name: customer_lifetime_value
+        dataType:
+          type: Integer
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:

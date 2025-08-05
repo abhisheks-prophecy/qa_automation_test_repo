@@ -99,6 +99,34 @@
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
       }
+    },
+    "O75viKUk4nULplDDmAgY7$$gPuc3kORWXuk_W3cP5gt5" : {
+      "id" : "O75viKUk4nULplDDmAgY7$$gPuc3kORWXuk_W3cP5gt5",
+      "component" : "OrderBy",
+      "metadata" : {
+        "label" : "OrderBy_2",
+        "slug" : "OrderBy_2",
+        "x" : -1160,
+        "y" : -500,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "orders" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "gUdLbcGzmA6MUcyl7xxJ6$$dNsEN5FWK7XArfye6joYg",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "jA42VL-aVSA05Ykd-kEAd$$1xkYCpwO-bpNHVFaU7HFF",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
     }
   },
   "connections" : [ {

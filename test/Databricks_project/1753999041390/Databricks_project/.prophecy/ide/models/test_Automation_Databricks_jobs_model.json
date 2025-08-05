@@ -1,0 +1,91 @@
+{
+  "id" : "test_Automation_Databricks_jobs_model",
+  "metainfo" : {
+    "label" : "test_Automation_Databricks_jobs_model",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "full_refresh" : true,
+        "materialized" : "table",
+        "type" : "ModelConfig"
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "test_Automation_Databricks_jobs_model##bE3JjvaN" : {
+      "id" : "test_Automation_Databricks_jobs_model##bE3JjvaN",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "test_Automation_Databricks_jobs_model",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM qa_test_Automation_seed_job_Databricks\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "VTiypZvr",
+          "slug" : "qa_test_Automation_seed_job_Databricks"
+        } ],
+        "outputs" : [ {
+          "id" : "d7Tukn4r",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "9FZqL_G8b0-6tPyS7ECWU" : {
+      "id" : "9FZqL_G8b0-6tPyS7ECWU",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "qa_test_Automation_seed_job_Databricks",
+        "slug" : "qa_test_Automation_seed_job_Databricks",
+        "x" : -500,
+        "y" : -180,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "qa_test_Automation_seed_job_Databricks",
+          "sourceType" : "Seed",
+          "sourceName" : "",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "Fp8WE5jwjrDLP2gEd6ApY",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "wh_56BFs5STYLATcQHfHC",
+    "source" : "9FZqL_G8b0-6tPyS7ECWU",
+    "sourcePort" : "Fp8WE5jwjrDLP2gEd6ApY",
+    "target" : "test_Automation_Databricks_jobs_model##bE3JjvaN",
+    "targetPort" : "VTiypZvr"
+  } ],
+  "component" : "Model"
+}

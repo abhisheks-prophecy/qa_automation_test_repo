@@ -1,6 +1,6 @@
-name: Automation_Databricks_SQL_Revoke_Team_Access_1
+name: Automation_SQL_CodeView
 description: test random description
-version: '1.1754387568964'
+version: 0.0.1
 author: abhisheks+e2etests@prophecy.io
 language: sql
 buildSystem: ''
@@ -8,7 +8,32 @@ buildSystemDetails: null
 pipelines: {}
 datasets: {}
 templates: {}
-jobs: {}
+jobs:
+  jobs/Databricks-SQL_Automation_CodeView:
+    name: Databricks-SQL_Automation_CodeView
+    description: SQL Snowflake test job MWAA
+    fabricUID: 9
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0 0 0 * * ? 2090
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2025-08-29 14:09:40'
+    author: abhisheks+e2etests@prophecy.io
+    models: []
+    sqlProjects: []
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''
@@ -16,7 +41,7 @@ gemContainer:
   dependencies: null
 functions:
   author: null
-  createdAt: '2025-08-05 09:48:17'
+  createdAt: '2025-08-29 14:05:54'
   udfs: {}
   udafs: {}
   expressions: {}
@@ -24,39 +49,33 @@ functions:
   businessRules: {}
 subgraphs: {}
 sqlModels:
-  .prophecy/metadata/sqlmodels/test_random_1:
-    name: test_random_1
+  .prophecy/metadata/sqlmodels/test_Automation_Databricks_jobs_model:
+    name: test_Automation_Databricks_jobs_model
     schema:
       entityType: ''
       providerType: Databricks
       fields:
-      - name: customer_id
+      - name: id
         dataType:
           type: Integer
-      - name: first_name
+      - name: name
         dataType:
           type: String
-      - name: last_name
+      - name: updated_at
         dataType:
-          type: String
-      - name: number_of_orders
-        dataType:
-          type: Integer
-      - name: customer_lifetime_value
-        dataType:
-          type: Integer
+          type: Date
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
-    - models/testmodel1/test_random_1.sql
-    - .prophecy/ide/models/test_random_1.json
+    - models/testmodel/test_Automation_Databricks_jobs_model.sql
+    - .prophecy/ide/models/test_Automation_Databricks_jobs_model.json
     sqlDependencies:
       models: []
       datasets: []
       seeds: []
       sources: []
       snapshots: []
-    createdAt: '2025-08-05 09:50:48'
+    createdAt: '2025-08-29 14:07:01'
 sqlSnapshots: {}
 sqlTests: {}
 sqlMacros:
@@ -68,51 +87,45 @@ sqlMacros:
     files:
     - macros/generate_schema_name.sql
     - .prophecy/ide/macros/generate_schema_name.json
-    createdAt: '2025-08-05 09:48:30'
+    createdAt: '2025-08-29 14:05:59'
 sqlSeeds:
-  .prophecy/metadata/sqlseeds/customers:
-    name: customers
+  .prophecy/metadata/sqlseeds/qa_test_Automation_seed_job_Databricks:
+    name: qa_test_Automation_seed_job_Databricks
     schema:
       entityType: ''
       providerType: Databricks
       fields:
-      - name: customer_id
+      - name: id
         dataType:
           type: Integer
-      - name: first_name
+      - name: name
         dataType:
           type: String
-      - name: last_name
+      - name: updated_at
         dataType:
-          type: String
-      - name: number_of_orders
-        dataType:
-          type: Integer
-      - name: customer_lifetime_value
-        dataType:
-          type: Integer
+          type: Date
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
-    - seeds/customers.csv
-    createdAt: '2025-08-05 09:52:08'
+    - seeds/qa_test_Automation_seed_job_Databricks.csv
+    createdAt: '2025-08-29 14:08:09'
 sqlSources: {}
 sqlUnreferencedSources: {}
 sqlPipeline:
   name: sqlPipeline
   description: null
   author: abhisheks+e2etests@prophecy.io
-  createdAt: '2025-08-05 09:48:17'
+  createdAt: '2025-08-29 14:05:54'
 dependencies: []
 projectDependencies:
-  '13581':
-    projectUID: 13581
+  '3832':
+    projectUID: 3832
     projectName: ProphecyDatabricksSqlBasics
     repositoryPath: gitUri=https://github.com/prophecy-io/databricks-sql-basics&subPath=
-    version: 0.0.12.dev5
+    version: 0.0.12
     isDefault: true
     author: null
-    createdAt: '2025-08-05 09:47:42'
+    createdAt: '2025-08-29 14:05:25'
 flags:
   shouldAddDefaultDependenciesIfAbsent: false
 pipelineConfigurations: {}

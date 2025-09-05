@@ -1,0 +1,849 @@
+{
+  "id" : "test_random_1",
+  "metainfo" : {
+    "label" : "test_random_1",
+    "autoLayout" : false,
+    "staleState" : "file",
+    "sourceSuggestions" : {
+      "sources" : [ {
+        "source" : {
+          "table" : {
+            "name" : "customerdata",
+            "sourceName" : "hive_metastore.qa_db_warehouse",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "customerdata",
+        "canJoinWith" : [ {
+          "processLabel" : "customers",
+          "processId" : "e16utDGnAaSATloLTwv3H",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "first_name", "last_name" ],
+            "conditions" : [ {
+              "alias" : "customerdata",
+              "expression" : {
+                "expression" : "customerdata.first_name = customers.first_name AND customerdata.last_name = customers.last_name"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "customerdata.phone"
+              },
+              "alias" : "phone"
+            }, {
+              "expression" : {
+                "expression" : "customerdata.email"
+              },
+              "alias" : "email"
+            }, {
+              "expression" : {
+                "expression" : "customerdata.country_code"
+              },
+              "alias" : "country_code"
+            }, {
+              "expression" : {
+                "expression" : "customerdata.account_open_date"
+              },
+              "alias" : "account_open_date"
+            }, {
+              "expression" : {
+                "expression" : "customerdata.account_flags"
+              },
+              "alias" : "account_flags"
+            }, {
+              "expression" : {
+                "expression" : "customers.customer_id"
+              },
+              "alias" : "customer_id"
+            }, {
+              "expression" : {
+                "expression" : "customers.last_name"
+              },
+              "alias" : "last_name"
+            }, {
+              "expression" : {
+                "expression" : "customers.customer_lifetime_value"
+              },
+              "alias" : "customer_lifetime_value"
+            }, {
+              "expression" : {
+                "expression" : "customers.number_of_orders"
+              },
+              "alias" : "number_of_orders"
+            }, {
+              "expression" : {
+                "expression" : "customers.first_name"
+              },
+              "alias" : "first_name"
+            } ],
+            "headAlias" : "customerdata",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "first_name", "last_name" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "env_uitesting_expressions",
+            "sourceName" : "hive_metastore.qa_db_warehouse",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "env_uitesting_expressions",
+        "canJoinWith" : [ {
+          "processLabel" : "customers",
+          "processId" : "e16utDGnAaSATloLTwv3H",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "first_name", "last_name" ],
+            "conditions" : [ {
+              "alias" : "env_uitesting_expressions",
+              "expression" : {
+                "expression" : "env_uitesting_expressions.first_name = customers.first_name AND env_uitesting_expressions.last_name = customers.last_name"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "env_uitesting_expressions.c_expressions"
+              },
+              "alias" : "c_expressions"
+            }, {
+              "expression" : {
+                "expression" : "env_uitesting_expressions.c1"
+              },
+              "alias" : "c1"
+            }, {
+              "expression" : {
+                "expression" : "customers.customer_id"
+              },
+              "alias" : "customer_id"
+            }, {
+              "expression" : {
+                "expression" : "customers.last_name"
+              },
+              "alias" : "last_name"
+            }, {
+              "expression" : {
+                "expression" : "customers.customer_lifetime_value"
+              },
+              "alias" : "customer_lifetime_value"
+            }, {
+              "expression" : {
+                "expression" : "customers.number_of_orders"
+              },
+              "alias" : "number_of_orders"
+            }, {
+              "expression" : {
+                "expression" : "customers.first_name"
+              },
+              "alias" : "first_name"
+            } ],
+            "headAlias" : "env_uitesting_expressions",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "first_name", "last_name" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "prophecy__temp_orchestration_orderbygem_automation_databricks_pipeline_pre_employee_hire_details_0",
+            "sourceName" : "hive_metastore.qa_db_warehouse",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "prophecy__temp_orchestration_orderbygem_automation_databricks_pipeline_pre_employee_hire_details_0",
+        "canJoinWith" : [ {
+          "processLabel" : "customers",
+          "processId" : "e16utDGnAaSATloLTwv3H",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "last_name" ],
+            "conditions" : [ {
+              "alias" : "prophecy__temp_orchestration_orderbygem_automation_databricks_pipeline_pre_employee_hire_details_0",
+              "expression" : {
+                "expression" : "prophecy__temp_orchestration_orderbygem_automation_databricks_pipeline_pre_employee_hire_details_0.last_name = customers.last_name"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "prophecy__temp_orchestration_orderbygem_automation_databricks_pipeline_pre_employee_hire_details_0.department_id"
+              },
+              "alias" : "department_id"
+            }, {
+              "expression" : {
+                "expression" : "prophecy__temp_orchestration_orderbygem_automation_databricks_pipeline_pre_employee_hire_details_0.hire_date"
+              },
+              "alias" : "hire_date"
+            }, {
+              "expression" : {
+                "expression" : "customers.customer_id"
+              },
+              "alias" : "customer_id"
+            }, {
+              "expression" : {
+                "expression" : "customers.last_name"
+              },
+              "alias" : "last_name"
+            }, {
+              "expression" : {
+                "expression" : "customers.customer_lifetime_value"
+              },
+              "alias" : "customer_lifetime_value"
+            }, {
+              "expression" : {
+                "expression" : "customers.number_of_orders"
+              },
+              "alias" : "number_of_orders"
+            }, {
+              "expression" : {
+                "expression" : "customers.first_name"
+              },
+              "alias" : "first_name"
+            } ],
+            "headAlias" : "prophecy__temp_orchestration_orderbygem_automation_databricks_pipeline_pre_employee_hire_details_0",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "last_name" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "prophecy_smoketest_model",
+            "sourceName" : "hive_metastore.qa_db_warehouse",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "prophecy_smoketest_model",
+        "canJoinWith" : [ {
+          "processLabel" : "customers",
+          "processId" : "e16utDGnAaSATloLTwv3H",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "first_name", "last_name" ],
+            "conditions" : [ {
+              "alias" : "prophecy_smoketest_model",
+              "expression" : {
+                "expression" : "prophecy_smoketest_model.first_name = customers.first_name AND prophecy_smoketest_model.last_name = customers.last_name"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "customers.customer_id"
+              },
+              "alias" : "customer_id"
+            }, {
+              "expression" : {
+                "expression" : "customers.last_name"
+              },
+              "alias" : "last_name"
+            }, {
+              "expression" : {
+                "expression" : "customers.customer_lifetime_value"
+              },
+              "alias" : "customer_lifetime_value"
+            }, {
+              "expression" : {
+                "expression" : "customers.number_of_orders"
+              },
+              "alias" : "number_of_orders"
+            }, {
+              "expression" : {
+                "expression" : "customers.first_name"
+              },
+              "alias" : "first_name"
+            } ],
+            "headAlias" : "prophecy_smoketest_model",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "first_name", "last_name" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "prophecy_tmp__mbj2by0z__parent_analyst_pipeline_1__file_example_xlsx_5000_1",
+            "sourceName" : "hive_metastore.qa_db_warehouse",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "prophecy_tmp__mbj2by0z__parent_analyst_pipeline_1__file_example_xlsx_5000_1",
+        "canJoinWith" : [ {
+          "processLabel" : "customers",
+          "processId" : "e16utDGnAaSATloLTwv3H",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "first_name", "last_name" ],
+            "conditions" : [ {
+              "alias" : "prophecy_tmp__mbj2by0z__parent_analyst_pipeline_1__file_example_xlsx_5000_1",
+              "expression" : {
+                "expression" : "prophecy_tmp__mbj2by0z__parent_analyst_pipeline_1__file_example_xlsx_5000_1.First_Name = customers.first_name AND prophecy_tmp__mbj2by0z__parent_analyst_pipeline_1__file_example_xlsx_5000_1.Last_Name = customers.last_name"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "prophecy_tmp__mbj2by0z__parent_analyst_pipeline_1__file_example_xlsx_5000_1.Column1"
+              },
+              "alias" : "Column1"
+            }, {
+              "expression" : {
+                "expression" : "prophecy_tmp__mbj2by0z__parent_analyst_pipeline_1__file_example_xlsx_5000_1.Gender"
+              },
+              "alias" : "Gender"
+            }, {
+              "expression" : {
+                "expression" : "prophecy_tmp__mbj2by0z__parent_analyst_pipeline_1__file_example_xlsx_5000_1.Country"
+              },
+              "alias" : "Country"
+            }, {
+              "expression" : {
+                "expression" : "prophecy_tmp__mbj2by0z__parent_analyst_pipeline_1__file_example_xlsx_5000_1.Age"
+              },
+              "alias" : "Age"
+            }, {
+              "expression" : {
+                "expression" : "prophecy_tmp__mbj2by0z__parent_analyst_pipeline_1__file_example_xlsx_5000_1.Date"
+              },
+              "alias" : "Date"
+            }, {
+              "expression" : {
+                "expression" : "prophecy_tmp__mbj2by0z__parent_analyst_pipeline_1__file_example_xlsx_5000_1.Id"
+              },
+              "alias" : "Id"
+            }, {
+              "expression" : {
+                "expression" : "customers.customer_id"
+              },
+              "alias" : "customer_id"
+            }, {
+              "expression" : {
+                "expression" : "customers.last_name"
+              },
+              "alias" : "last_name"
+            }, {
+              "expression" : {
+                "expression" : "customers.customer_lifetime_value"
+              },
+              "alias" : "customer_lifetime_value"
+            }, {
+              "expression" : {
+                "expression" : "customers.number_of_orders"
+              },
+              "alias" : "number_of_orders"
+            }, {
+              "expression" : {
+                "expression" : "customers.first_name"
+              },
+              "alias" : "first_name"
+            } ],
+            "headAlias" : "prophecy_tmp__mbj2by0z__parent_analyst_pipeline_1__file_example_xlsx_5000_1",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "first_name", "last_name" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "datatypetestseed",
+            "sourceName" : "hive_metastore.qa_db_warehouse",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "datatypetestseed",
+        "canJoinWith" : [ {
+          "processLabel" : "customers",
+          "processId" : "e16utDGnAaSATloLTwv3H",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "first_name", "last_name" ],
+            "conditions" : [ {
+              "alias" : "datatypetestseed",
+              "expression" : {
+                "expression" : "datatypetestseed.first_name = customers.first_name AND datatypetestseed.last_name = customers.last_name"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "datatypetestseed.id"
+              },
+              "alias" : "id"
+            }, {
+              "expression" : {
+                "expression" : "datatypetestseed.dob"
+              },
+              "alias" : "dob"
+            }, {
+              "expression" : {
+                "expression" : "datatypetestseed.email"
+              },
+              "alias" : "email"
+            }, {
+              "expression" : {
+                "expression" : "datatypetestseed.phone"
+              },
+              "alias" : "phone"
+            }, {
+              "expression" : {
+                "expression" : "datatypetestseed.address"
+              },
+              "alias" : "address"
+            }, {
+              "expression" : {
+                "expression" : "datatypetestseed.city"
+              },
+              "alias" : "city"
+            }, {
+              "expression" : {
+                "expression" : "datatypetestseed.country"
+              },
+              "alias" : "country"
+            }, {
+              "expression" : {
+                "expression" : "datatypetestseed.registration_date"
+              },
+              "alias" : "registration_date"
+            }, {
+              "expression" : {
+                "expression" : "datatypetestseed.last_purchase_date"
+              },
+              "alias" : "last_purchase_date"
+            }, {
+              "expression" : {
+                "expression" : "datatypetestseed.total_purchases"
+              },
+              "alias" : "total_purchases"
+            }, {
+              "expression" : {
+                "expression" : "datatypetestseed.loyalty_points"
+              },
+              "alias" : "loyalty_points"
+            }, {
+              "expression" : {
+                "expression" : "datatypetestseed.is_active"
+              },
+              "alias" : "is_active"
+            }, {
+              "expression" : {
+                "expression" : "customers.customer_id"
+              },
+              "alias" : "customer_id"
+            }, {
+              "expression" : {
+                "expression" : "customers.last_name"
+              },
+              "alias" : "last_name"
+            }, {
+              "expression" : {
+                "expression" : "customers.customer_lifetime_value"
+              },
+              "alias" : "customer_lifetime_value"
+            }, {
+              "expression" : {
+                "expression" : "customers.number_of_orders"
+              },
+              "alias" : "number_of_orders"
+            }, {
+              "expression" : {
+                "expression" : "customers.first_name"
+              },
+              "alias" : "first_name"
+            } ],
+            "headAlias" : "datatypetestseed",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "first_name", "last_name" ],
+          "isRecommended" : false
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "enhancedexpmodel_2",
+            "sourceName" : "hive_metastore.qa_db_warehouse",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "enhancedexpmodel_2",
+        "canJoinWith" : [ {
+          "processLabel" : "customers",
+          "processId" : "e16utDGnAaSATloLTwv3H",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "first_name", "last_name" ],
+            "conditions" : [ {
+              "alias" : "enhancedexpmodel_2",
+              "expression" : {
+                "expression" : "enhancedexpmodel_2.first_name = customers.first_name AND enhancedexpmodel_2.last_name = customers.last_name"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "enhancedexpmodel_2.credit_card_amount"
+              },
+              "alias" : "credit_card_amount"
+            }, {
+              "expression" : {
+                "expression" : "enhancedexpmodel_2.amount"
+              },
+              "alias" : "amount"
+            }, {
+              "expression" : {
+                "expression" : "enhancedexpmodel_2.first_order"
+              },
+              "alias" : "first_order"
+            }, {
+              "expression" : {
+                "expression" : "enhancedexpmodel_2.gift_card_amount"
+              },
+              "alias" : "gift_card_amount"
+            }, {
+              "expression" : {
+                "expression" : "enhancedexpmodel_2.order_date"
+              },
+              "alias" : "order_date"
+            }, {
+              "expression" : {
+                "expression" : "enhancedexpmodel_2.order_id"
+              },
+              "alias" : "order_id"
+            }, {
+              "expression" : {
+                "expression" : "enhancedexpmodel_2.coupon_amount"
+              },
+              "alias" : "coupon_amount"
+            }, {
+              "expression" : {
+                "expression" : "enhancedexpmodel_2.bank_transfer_amount"
+              },
+              "alias" : "bank_transfer_amount"
+            }, {
+              "expression" : {
+                "expression" : "enhancedexpmodel_2.most_recent_order"
+              },
+              "alias" : "most_recent_order"
+            }, {
+              "expression" : {
+                "expression" : "enhancedexpmodel_2.status"
+              },
+              "alias" : "status"
+            }, {
+              "expression" : {
+                "expression" : "customers.customer_id"
+              },
+              "alias" : "customer_id"
+            }, {
+              "expression" : {
+                "expression" : "customers.last_name"
+              },
+              "alias" : "last_name"
+            }, {
+              "expression" : {
+                "expression" : "customers.customer_lifetime_value"
+              },
+              "alias" : "customer_lifetime_value"
+            }, {
+              "expression" : {
+                "expression" : "customers.number_of_orders"
+              },
+              "alias" : "number_of_orders"
+            }, {
+              "expression" : {
+                "expression" : "customers.first_name"
+              },
+              "alias" : "first_name"
+            } ],
+            "headAlias" : "enhancedexpmodel_2",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "first_name", "last_name" ],
+          "isRecommended" : false
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "genericdatatestmodel",
+            "sourceName" : "hive_metastore.qa_db_warehouse",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "genericdatatestmodel",
+        "canJoinWith" : [ {
+          "processLabel" : "customers",
+          "processId" : "e16utDGnAaSATloLTwv3H",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "first_name", "last_name" ],
+            "conditions" : [ {
+              "alias" : "genericdatatestmodel",
+              "expression" : {
+                "expression" : "genericdatatestmodel.first_name = customers.first_name AND genericdatatestmodel.last_name = customers.last_name"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "customers.customer_id"
+              },
+              "alias" : "customer_id"
+            }, {
+              "expression" : {
+                "expression" : "customers.last_name"
+              },
+              "alias" : "last_name"
+            }, {
+              "expression" : {
+                "expression" : "customers.customer_lifetime_value"
+              },
+              "alias" : "customer_lifetime_value"
+            }, {
+              "expression" : {
+                "expression" : "customers.number_of_orders"
+              },
+              "alias" : "number_of_orders"
+            }, {
+              "expression" : {
+                "expression" : "customers.first_name"
+              },
+              "alias" : "first_name"
+            } ],
+            "headAlias" : "genericdatatestmodel",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "first_name", "last_name" ],
+          "isRecommended" : false
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "prophecy_tmp__mbf70qce__orchestration_smartsheets_automation_databricks_pipeline__employee_directory_smartsheet",
+            "sourceName" : "hive_metastore.qa_db_warehouse",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "prophecy_tmp__mbf70qce__orchestration_smartsheets_automation_databricks_pipeline__employee_directory_smartsheet",
+        "canJoinWith" : [ {
+          "processLabel" : "customers",
+          "processId" : "e16utDGnAaSATloLTwv3H",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "first_name", "last_name" ],
+            "conditions" : [ {
+              "alias" : "prophecy_tmp__mbf70qce__orchestration_smartsheets_automation_databricks_pipeline__employee_directory_smartsheet",
+              "expression" : {
+                "expression" : "prophecy_tmp__mbf70qce__orchestration_smartsheets_automation_databricks_pipeline__employee_directory_smartsheet.First_Name = customers.first_name AND prophecy_tmp__mbf70qce__orchestration_smartsheets_automation_databricks_pipeline__employee_directory_smartsheet.Last_Name = customers.last_name"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "prophecy_tmp__mbf70qce__orchestration_smartsheets_automation_databricks_pipeline__employee_directory_smartsheet.Column1"
+              },
+              "alias" : "Column1"
+            }, {
+              "expression" : {
+                "expression" : "prophecy_tmp__mbf70qce__orchestration_smartsheets_automation_databricks_pipeline__employee_directory_smartsheet.Gender"
+              },
+              "alias" : "Gender"
+            }, {
+              "expression" : {
+                "expression" : "prophecy_tmp__mbf70qce__orchestration_smartsheets_automation_databricks_pipeline__employee_directory_smartsheet.Country"
+              },
+              "alias" : "Country"
+            }, {
+              "expression" : {
+                "expression" : "prophecy_tmp__mbf70qce__orchestration_smartsheets_automation_databricks_pipeline__employee_directory_smartsheet.Age"
+              },
+              "alias" : "Age"
+            }, {
+              "expression" : {
+                "expression" : "prophecy_tmp__mbf70qce__orchestration_smartsheets_automation_databricks_pipeline__employee_directory_smartsheet.Date"
+              },
+              "alias" : "Date"
+            }, {
+              "expression" : {
+                "expression" : "prophecy_tmp__mbf70qce__orchestration_smartsheets_automation_databricks_pipeline__employee_directory_smartsheet.Id"
+              },
+              "alias" : "Id"
+            }, {
+              "expression" : {
+                "expression" : "customers.customer_id"
+              },
+              "alias" : "customer_id"
+            }, {
+              "expression" : {
+                "expression" : "customers.last_name"
+              },
+              "alias" : "last_name"
+            }, {
+              "expression" : {
+                "expression" : "customers.customer_lifetime_value"
+              },
+              "alias" : "customer_lifetime_value"
+            }, {
+              "expression" : {
+                "expression" : "customers.number_of_orders"
+              },
+              "alias" : "number_of_orders"
+            }, {
+              "expression" : {
+                "expression" : "customers.first_name"
+              },
+              "alias" : "first_name"
+            } ],
+            "headAlias" : "prophecy_tmp__mbf70qce__orchestration_smartsheets_automation_databricks_pipeline__employee_directory_smartsheet",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "first_name", "last_name" ],
+          "isRecommended" : false
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "test_random_1",
+            "sourceName" : "hive_metastore.qa_db_warehouse",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "test_random_1_1",
+        "canJoinWith" : [ {
+          "processLabel" : "customers",
+          "processId" : "e16utDGnAaSATloLTwv3H",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "first_name", "last_name" ],
+            "conditions" : [ {
+              "alias" : "test_random_1_1",
+              "expression" : {
+                "expression" : "test_random_1_1.first_name = customers.first_name AND test_random_1_1.last_name = customers.last_name"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "customers.customer_id"
+              },
+              "alias" : "customer_id"
+            }, {
+              "expression" : {
+                "expression" : "customers.last_name"
+              },
+              "alias" : "last_name"
+            }, {
+              "expression" : {
+                "expression" : "customers.customer_lifetime_value"
+              },
+              "alias" : "customer_lifetime_value"
+            }, {
+              "expression" : {
+                "expression" : "customers.number_of_orders"
+              },
+              "alias" : "number_of_orders"
+            }, {
+              "expression" : {
+                "expression" : "customers.first_name"
+              },
+              "alias" : "first_name"
+            } ],
+            "headAlias" : "test_random_1_1",
+            "allowSelection" : false
+          },
+          "joinColumns" : [ "first_name", "last_name" ],
+          "isRecommended" : false
+        } ]
+      } ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "test_random_1##KNT74bIc" : {
+      "id" : "test_random_1##KNT74bIc",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "test_random_1",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM customers\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "eeRB5XLf",
+          "slug" : "customers"
+        } ],
+        "outputs" : [ {
+          "id" : "ZzIExrr4",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "e16utDGnAaSATloLTwv3H" : {
+      "id" : "e16utDGnAaSATloLTwv3H",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "customers",
+        "slug" : "customers",
+        "x" : -420,
+        "y" : -140,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "customers",
+          "sourceType" : "Seed",
+          "sourceName" : "",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "2TT_Xq8qzVjk1VxJyiYr_",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "d6jO3BeYmU1SPgfFQiPoY",
+    "source" : "e16utDGnAaSATloLTwv3H",
+    "sourcePort" : "2TT_Xq8qzVjk1VxJyiYr_",
+    "target" : "test_random_1##KNT74bIc",
+    "targetPort" : "eeRB5XLf"
+  } ],
+  "component" : "Model"
+}

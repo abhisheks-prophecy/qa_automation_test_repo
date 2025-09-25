@@ -1,0 +1,73 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "7",
+    "jobId" : "jobs/Databricks-SQL_Automation_CodeView",
+    "name" : "Databricks-SQL_Automation_CodeView",
+    "schedule" : "0 0 0 * * ? 2090",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "small",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    }
+  },
+  "processes" : {
+    "UQNl9G5xFBigdTM_I225t$$51Fiuchk8Ok819xIH6q3E" : {
+      "id" : "UQNl9G5xFBigdTM_I225t$$51Fiuchk8Ok819xIH6q3E",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_0",
+        "slug" : "Script_0",
+        "x" : -560,
+        "y" : -140
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "W96ni9sHarpZCb29sk8XR$$LDLhSZ5asXn0_3Wik0VSQ",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "QRtnSD3GPm3KWRoI_-yyZ$$WgstQRqvi4UX4gBJq7FTH",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        },
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "code" : ""
+      }
+    }
+  },
+  "connections" : [ ]
+}

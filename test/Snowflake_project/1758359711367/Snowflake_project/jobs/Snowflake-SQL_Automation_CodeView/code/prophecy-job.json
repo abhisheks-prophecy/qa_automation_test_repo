@@ -1,0 +1,74 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "4",
+    "jobId" : "jobs/Snowflake-SQL_Automation_CodeView",
+    "name" : "Snowflake-SQL_Automation_CodeView",
+    "schedule" : "0 0 0 * * ? 2090",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "prophecy_internal_jobs",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    }
+  },
+  "processes" : {
+    "B9KWfc-EJtCbJd0gC2C1h$$7QkBmoFqo9uAD3aXGweuh" : {
+      "id" : "B9KWfc-EJtCbJd0gC2C1h$$7QkBmoFqo9uAD3aXGweuh",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_0",
+        "slug" : "Script_0",
+        "x" : -560,
+        "y" : -140
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "gzRBBfji5nRtqkpPExmLR$$hqfl489u0SdlZP9hQCLOh",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "TIqKC8Mf53NSBQ3WGqh0l$$wOHUgX1KHJsxv-tJfpBJl",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        },
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "code" : ""
+      }
+    }
+  },
+  "connections" : [ ]
+}

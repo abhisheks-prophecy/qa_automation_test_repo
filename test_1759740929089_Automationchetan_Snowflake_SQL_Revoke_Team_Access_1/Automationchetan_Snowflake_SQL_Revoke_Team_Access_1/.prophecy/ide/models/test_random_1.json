@@ -1,0 +1,84 @@
+{
+  "id" : "test_random_1",
+  "metainfo" : {
+    "label" : "test_random_1",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "test_random_1##ek1437to" : {
+      "id" : "test_random_1##ek1437to",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "test_random_1",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM customers\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ZDPJ0zLg",
+          "slug" : "customers"
+        } ],
+        "outputs" : [ {
+          "id" : "Hq7hO6G9",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "xL6V2XEmx7taMm7uw190J" : {
+      "id" : "xL6V2XEmx7taMm7uw190J",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "customers",
+        "slug" : "customers",
+        "x" : -420,
+        "y" : -140,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "customers",
+          "sourceType" : "Seed",
+          "sourceName" : "",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "Z6J1hSJeYeQXnUDHm9DT_",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "OB0J9Y1vlWfi_L018yCEm",
+    "source" : "xL6V2XEmx7taMm7uw190J",
+    "sourcePort" : "Z6J1hSJeYeQXnUDHm9DT_",
+    "target" : "test_random_1##ek1437to",
+    "targetPort" : "ZDPJ0zLg"
+  } ],
+  "component" : "Model"
+}
